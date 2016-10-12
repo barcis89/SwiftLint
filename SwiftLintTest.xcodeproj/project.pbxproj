@@ -268,7 +268,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\nswiftlint lint --reporter junit\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint lint --reporter junit --quiet \nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -523,6 +523,7 @@
 				1F1BA2A21DA1953D00709D27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F1BA2A31DA1953D00709D27 /* Build configuration list for PBXNativeTarget "SwiftLintTestTests" */ = {
 			isa = XCConfigurationList;
@@ -531,6 +532,7 @@
 				1F1BA2A51DA1953D00709D27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F1BA2A61DA1953D00709D27 /* Build configuration list for PBXNativeTarget "SwiftLintTestUITests" */ = {
 			isa = XCConfigurationList;
@@ -539,6 +541,7 @@
 				1F1BA2A81DA1953D00709D27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
